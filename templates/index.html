@@ -1,0 +1,10 @@
+<!doctype html>
+<title>TIMS Extractor</title>
+<h1>Enter TIMS ID</h1>
+<form method="post">
+  <input name="tims_id">
+  <button type="submit">Extract</button>
+</form>
+{% with messages = get_flashed_messages() %}
+  {% for msg in messages %}<p style="color:red">{{ msg }}</p>{% endfor %}
+{% endwith %}
