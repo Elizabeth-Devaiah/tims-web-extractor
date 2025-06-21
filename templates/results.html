@@ -1,0 +1,7 @@
+<!doctype html>
+<title>Results</title>
+<h2>🎯 {{ title }}</h2>
+<p>Configurations found:</p>
+<ul>{% for cfg in configs %}<li>{{ cfg }}</li>{% endfor %}</ul>
+<a href="{{ download_file }}">Download Excel</a><br>
+<a href="{{ url_for('index') }}">Back</a>
